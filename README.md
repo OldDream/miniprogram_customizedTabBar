@@ -74,7 +74,7 @@ tab对应页面的js中，设定高亮选中的条目：
    * 生命周期函数--监听页面初次渲染完成
    */
   onLoad: function () {
-    // 设置本页中自定义tabBar
+    // 设置页面中的自定义tabBar
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
       this.getTabBar().setData({
