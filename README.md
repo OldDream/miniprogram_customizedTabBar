@@ -15,7 +15,7 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/ability/custom-tabbar
 **第一步：**
 
 ```js
-// 根目录的app.json需要配置一下
+// 根目录 app.json
 "tabBar": {
     "custom": true, // 声明自定义
     "color": "#999999",
@@ -55,7 +55,7 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/ability/custom-tabbar
 
 **第二步**
 
-tab对应页面的json文件需要添加，调用自定义tabbar：
+tab对应页面的json文件，调用自定义tabbar：
 
 ```
 {
@@ -67,7 +67,7 @@ tab对应页面的json文件需要添加，调用自定义tabbar：
 
 **第三步**：
 
-tab对应页面中，需要用js设定高亮选中的条目：
+tab对应页面的js中，设定高亮选中的条目：
 
 ```
  /**
