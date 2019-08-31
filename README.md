@@ -3,7 +3,7 @@
 效果图如下：
 
 
-
+![show result](https://raw.githubusercontent.com/OldDream/miniprogram_customizedTabBar/master/gitImgs/snapShot1.PNG)
 
 
 项目配置可参考官方文档：
