@@ -1,0 +1,16 @@
+<view class="tabbar_box" style="background-color:{{backgroundColor}}">
+  <view class='special-wrapper-border'></view>
+  <block wx:for="{{list}}" wx:key="{{item.pagePath}}">
+    <view wx:if="{{item.isSpecial}}" class="tabbar_nav" hover-class="none" url="{{item.pagePath}}" style="color:{{selected === index ? selectedColor : color}}" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+      <view class='special-wrapper' >
+        <image class="tabbar_icon" src="./icon/tab.gif"></image> <!-- 官方不支持的图标格式 -->
+      </view>
+      <image class='special-text-wrapper' ></image>
+      <text>{{item.text}}</text>
+    </view>
+    <view wx:else class="tabbar_nav" hover-class="none" data-path="{{item.pagePath}}" data-index="{{index}}" style="color:{{selected === index ? selectedColor : color}}" bindtap="switchTab">
+      <image class="tabbar_icon" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view>
